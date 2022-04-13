@@ -1,0 +1,67 @@
+:root {
+  --c-black: #000;
+  --c-black-lighter: #1C1C1E; 
+  --c-black-light: #2c2c2e;
+  --c-secondary: #997f72;
+  --c-white-accent: #f3f3f5;
+  --c-white: #fff;
+  --c-grey: #8f8f8f;
+  --f-size-sub: 14px;
+  --app-height: 100vh;
+  --app-padding: 8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Gilroy Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url(/assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url(/assets/fonts/Gilroy-Bold.ttf);
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --app-padding: 6rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}

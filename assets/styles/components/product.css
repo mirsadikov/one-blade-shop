@@ -1,0 +1,102 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__img {
+  max-width: 41.6rem;
+  width: 100%;
+}
+
+.product__swatches {
+  display: flex;
+  gap: 20px;
+}
+
+.product__swatch {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #bebebe;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 8px;
+}
+
+.product__swatch--brown {
+  background-color: #997f72;
+}
+
+.product__swatch--grey {
+  background-color: #404042;
+}
+
+.product__swatch--black {
+  background-color: #111111;
+}
+
+.product__swatch--selected {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.product__swatch--selected::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #bebebe;
+}
+
+.product__swatch--soldout::before {
+  content: url(/assets/images/icons/cross-white.svg);
+  position: absolute;
+  left: 1px;
+  /* transform: translate(-50%, -50%); */
+  top: 1px;
+}
+
+.product__title {
+  font-weight: 500;
+  font-family: 'Gilroy Bold';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 14px 0 9px;
+}
+
+.product__price {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__price--old {
+  opacity: 0.3;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.product__desc {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #404042;
+  padding: 16px 24px;
+}
+
+.product__btn {
+  max-width: 26.5rem;
+  width: 100%;
+  padding: 0;
+  margin-top: 30px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

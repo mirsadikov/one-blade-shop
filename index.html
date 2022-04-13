@@ -1,13 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/home.css" />
+    <script>
+      document.documentElement.style.setProperty(
+        '--app-height',
+        `${window.innerHeight}px`,
+      );
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="/assets/scripts/home.js" type="module"></script>
     <title>One Blade</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ANNOUNCEMENT -->
+      <div class="header__announcement">
+        <p>
+          Check out our <a class="header__announcement-link">Holiday</a> Sale!
+          Click here to shop now
+        </p>
+        <img src="/assets/images/icons/left-arrow.svg" alt="left arrow" />
+        <img
+          class="header__announcement-cross"
+          src="/assets/images/icons/cross.svg"
+          alt="cross"
+        />
+      </div>
+      <!-- NAV -->
+      <nav class="nav">
+        <div class="nav__container">
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="nav__toggle"
+            autocomplete="off"
+          />
+          <label for="menu-toggle" class="nav__menu-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <a href="/" class="nav__left">
+            <img
+              src="/assets/images/logo-icon.svg"
+              alt="logo"
+              class="nav__logo"
+            />
+          </a>
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Razors</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Shaving Supplies</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Gifts</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">The Story</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">The Difference</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">More</a>
+            </li>
+          </ul>
+          <div class="nav__right">
+            <a href="#">
+              <img src="/assets/images/icons/account.svg" alt="account" /> </a
+            ><a href="#"
+              ><img src="/assets/images/icons/bag.svg" alt="bag"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__rich-text">
+            <img src="/assets/images/logo-with-name.svg" alt="logo" />
+            <h1 class="hero__title">Lorem ipsum dolor sit consectetur</h1>
+            <img
+              src="/assets/images/home/hero-razor.png"
+              alt="razor"
+              class="hero__img"
+            />
+            <button class="btn btn--white">Ditch the disposals</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- AS SEEN IN -->
+      <section class="featured">
+        <div class="featured__container container">
+          <h3 class="featured__header f--sub">As seen in</h3>
+          <ul class="featured__brands">
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured1.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured2.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured3.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured4.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured5.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured6.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured7.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured8.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+            <li class="featured__brand-item">
+              <img
+                src="/assets/images/home/featured9.png"
+                alt="brand"
+                class="featured__brand-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MEDIA BANNER -->
+      <section class="media media1">
+        <div class="media__container container">
+          <div class="media__rich-text">
+            <h2 class="media__title">
+              Lorem ipsum dolor sit amet, consectetur
+            </h2>
+            <p class="media__desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto
+            </p>
+            <button class="btn">Ditch the disposals</button>
+          </div>
+          <img
+            src="/assets/images/home/media1.jpg"
+            alt="media image"
+            class="media__img"
+          />
+        </div>
+      </section>
+
+      <!-- MEDIA BANNER -->
+      <section class="media media2 media--reversed">
+        <div class="media__container container">
+          <div class="media__rich-text">
+            <h2 class="media__title">Lorem ipsum dolor sit amet</h2>
+            <p class="media__desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto
+            </p>
+            <button class="btn">Ditch the disposals</button>
+          </div>
+          <img
+            src="/assets/images/home/media2.jpg"
+            alt="media image"
+            class="media__img"
+          />
+        </div>
+      </section>
+
+      <!-- MEDIA BANNER 50x50 -->
+      <section class="media50 media3">
+        <div class="media__container container">
+          <img
+            src="/assets/images/home/media3.jpg"
+            alt="media image"
+            class="media__img"
+          />
+          <div class="media__rich-text">
+            <h2 class="media__title">Lorem ipsum dolor sit amet</h2>
+            <p class="media__desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam sed quia consequuntur magni
+              dolores eos qui ratione
+            </p>
+            <button class="btn btn--white">CHoose your razor</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEDIA BANNER -->
+      <section class="media media4">
+        <div class="media__container container">
+          <div class="media__rich-text">
+            <h2 class="media__title">Lorem ipsum dolor sit amet</h2>
+            <p class="media__desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto
+            </p>
+            <button class="btn">Ditch the disposals</button>
+          </div>
+          <img
+            src="/assets/images/home/media4.jpg"
+            alt="media image"
+            class="media__img"
+          />
+        </div>
+      </section>
+
+      <!-- MEDIA SLIDER -->
+      <section class="media-slider media5">
+        <div class="media-slider__container container">
+          <div class="media-slider__wrapper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide media-slider__slide">
+                <img
+                  src="/assets/images/home/media5.png"
+                  class="media-slide__img"
+                  alt="media video"
+                />
+                <img
+                  src="/assets/images/icons/play-btn.svg"
+                  alt="play button"
+                  class="media-slider__play-btn"
+                />
+              </div>
+              <div class="swiper-slide media-slider__slide">
+                <img
+                  src="/assets/images/home/media5.png"
+                  class="media-slide__img"
+                  alt="media video"
+                />
+              </div>
+              <div class="swiper-slide media-slider__slide">
+                <img
+                  src="/assets/images/home/media5.png"
+                  class="media-slide__img"
+                  alt="media video"
+                />
+              </div>
+              <div class="swiper-slide media-slider__slide">
+                <img
+                  src="/assets/images/home/media5.png"
+                  class="media-slide__img"
+                  alt="media video"
+                />
+              </div>
+            </div>
+            <div class="swiper-scrollbar media-slider__scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="products">
+        <div class="products__container container">
+          <!-- PRODUCT 1 -->
+          <div class="product">
+            <img
+              src="/assets/images/home/product.png"
+              alt="product"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <div
+                class="product__swatch product__swatch--brown product__swatch--selected"
+              ></div>
+              <div
+                class="product__swatch product__swatch--grey product__swatch--soldout"
+              ></div>
+              <div class="product__swatch product__swatch--black"></div>
+            </div>
+            <h3 class="product__title">Product title</h3>
+            <p class="product__price">
+              From $99.00 <span class="product__price--old">$150.00</span>
+            </p>
+            <p class="product__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <a href="/product.html" class="btn product__btn"
+              >Get the Product title</a
+            >
+          </div>
+          <!-- PRODUCT 2 -->
+          <div class="product">
+            <img
+              src="/assets/images/home/product.png"
+              alt="product"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <div
+                class="product__swatch product__swatch--brown product__swatch--selected"
+              ></div>
+              <div
+                class="product__swatch product__swatch--grey product__swatch--soldout"
+              ></div>
+              <div class="product__swatch product__swatch--black"></div>
+            </div>
+            <h3 class="product__title">Hybrid Razor</h3>
+            <p class="product__price">
+              From $99.00 <span class="product__price--old">$150.00</span>
+            </p>
+            <p class="product__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <a href="/product.html" class="btn product__btn">Get the Hybrid</a>
+          </div>
+          <!-- PRODUCT 3 -->
+          <div class="product">
+            <img
+              src="/assets/images/home/product.png"
+              alt="product"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <div
+                class="product__swatch product__swatch--brown product__swatch--selected"
+              ></div>
+              <div
+                class="product__swatch product__swatch--grey product__swatch--soldout"
+              ></div>
+              <div class="product__swatch product__swatch--black"></div>
+            </div>
+            <h3 class="product__title">Core Razor</h3>
+            <p class="product__price">$99.00</p>
+            <p class="product__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <a href="/product.html" class="btn product__btn">Get the Core</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE -->
+      <section class="quote">
+        <div class="quote__container container">
+          <h2 class="quote__title">
+            "A FERRARI IS NO ORDINARY CAR, AND THIS IS NO ORDINARY RAZOR"
+          </h2>
+          <p class="qoute__author">
+            - Renowed Shaving Expert Brain Mulreany, Executive Shaving CEO
+          </p>
+        </div>
+      </section>
+
+      <!-- IMAGE BANNER -->
+      <section class="image-banner">
+        <div class="image-banner__container container">
+          <img
+            src="/assets/images/home/banner.jpg"
+            alt="banner"
+            class="image-banner__image"
+          />
+        </div>
+      </section>
+
+      <!-- INFO -->
+      <section class="info">
+        <div class="info__container container">
+          <div class="info__box">
+            <h3 class="info__title">60-Day Free Trial</h3>
+            <p class="info__text">
+              Try any Razor for 60 days. If you don’t like it, send it back for
+              a full refund
+            </p>
+          </div>
+          <div class="info__box">
+            <h3 class="info__title">free us shipping on orders $75+</h3>
+            <p class="info__text">
+              Free standard shipping on all domestic orders over $75.
+            </p>
+          </div>
+          <div class="info__box">
+            <h3 class="info__title">Lifetime warranty</h3>
+            <p class="info__text">
+              All of our razors are guaranteed for life. Even in 2090, we’ll
+              still honor it.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__social-medias">
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/facebook.svg" alt="facebook"
+          /></a>
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/youtube.svg" alt="youtube"
+          /></a>
+        </div>
+        <form action="#" class="footer__form">
+          <input
+            type="email"
+            class="footer__input"
+            placeholder="Write your email ..."
+          />
+          <button class="footer__submit-btn btn btn--white">
+            Join the family
+          </button>
+        </form>
+        <p class="footer__text">
+          The only way to discover exclusive deals, new product launches and
+          more
+        </p>
+
+        <button class="footer__floating-btn">
+          <img src="/assets/images/icons/gift.svg" alt="gift" />
+        </button>
+      </div>
+    </footer>
+  </body>
 </html>
