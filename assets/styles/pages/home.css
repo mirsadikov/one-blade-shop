@@ -3,8 +3,8 @@
 }
 
 .hero__container {
-  height: calc(var(--app-height) - 88px);
-  max-height: 1400px;
+  height: var(--app-height);
+  max-height: calc(var(--app-height) - 88px);
 }
 
 .hero__rich-text {
@@ -38,8 +38,6 @@
   position: absolute;
   right: 0;
   top: 18vh;
-  max-height: 30vh;
-  object-fit: contain;
 }
 
 /* AS SEEN IN */
@@ -296,9 +294,15 @@
   margin: 8px 0;
 }
 
+@media (min-height: 1200px) {
+  .hero__container {
+    max-height: 1400px;
+  }
+}
+
 @media only screen and (max-width: 1000px) and (min-height: 900px) {
   .hero {
-    max-height: 850px;
+    max-height: 750px;
   }
 }
 
@@ -375,6 +379,8 @@
 
   .hero__img {
     position: static;
+    max-height: 30vh;
+    object-fit: contain;
   }
 
   .media {
