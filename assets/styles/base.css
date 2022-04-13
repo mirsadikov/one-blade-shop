@@ -1,6 +1,6 @@
 :root {
   --c-black: #000;
-  --c-black-lighter: #1C1C1E; 
+  --c-black-lighter: #1c1c1e;
   --c-black-light: #2c2c2e;
   --c-secondary: #997f72;
   --c-white-accent: #f3f3f5;
@@ -24,6 +24,11 @@ html {
   box-sizing: border-box;
   font-family: 'Gilroy Regular', sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 
 @font-face {
   font-family: 'Gilroy Regular';
@@ -50,6 +55,18 @@ html {
 @media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --app-padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --app-padding: 2rem;
   }
 }
 

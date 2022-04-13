@@ -93,7 +93,7 @@
 .product__btn {
   max-width: 26.5rem;
   width: 100%;
-  padding: 0;
+  padding: 0 1rem;
   margin-top: 30px;
   height: 66px;
   display: flex;

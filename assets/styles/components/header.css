@@ -84,7 +84,7 @@
 }
 
 .nav__menu-label span:nth-child(2),
-.nav__menu-label span:nth-child(4)  {
+.nav__menu-label span:nth-child(4) {
   top: 5px;
 }
 
@@ -145,5 +145,16 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__announcement {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .header__announcement-arrow {
+    display: none;
   }
 }
