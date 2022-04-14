@@ -1,13 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/product.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/product.css" />
+    <script>
+      document.documentElement.style.setProperty(
+        '--app-height',
+        `${window.innerHeight}px`,
+      );
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="/assets/scripts/product.js" type="module"></script>
     <title>One Blade</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ANNOUNCEMENT -->
+      <div class="header__announcement">
+        <p>
+          Check out our <a class="header__announcement-link">Holiday</a> Sale!
+          Click here to shop now
+        </p>
+        <img
+          src="/assets/images/icons/left-arrow.svg"
+          alt="left arrow"
+          class="header__announcement-arrow"
+        />
+        <img
+          class="header__announcement-cross"
+          src="/assets/images/icons/cross.svg"
+          alt="cross"
+        />
+      </div>
+      <!-- NAV -->
+      <nav class="nav">
+        <div class="nav__container">
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="nav__toggle"
+            autocomplete="off"
+          />
+          <label for="menu-toggle" class="nav__menu-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <a href="/" class="nav__left">
+            <img
+              src="/assets/images/logo-icon.svg"
+              alt="logo"
+              class="nav__logo"
+            />
+          </a>
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Razors</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Shaving Supplies</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">Gifts</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">The Story</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">The Difference</a>
+            </li>
+            <li class="nav__link">
+              <a href="/shop.html" class="nav__href">More</a>
+            </li>
+          </ul>
+          <div class="nav__right">
+            <a href="#">
+              <img src="/assets/images/icons/account.svg" alt="account" /> </a
+            ><a href="#"
+              ><img src="/assets/images/icons/bag.svg" alt="bag"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MEDIA -->
+      <section class="media50 media-bottom media50--black">
+        <div class="media50__container container">
+          <img
+            src="/assets/images/pdp/media1.png"
+            alt="media image"
+            class="media50__img"
+          />
+          <div class="media50__rich-text">
+            <h2 class="media50__title">Lorem ipsum dolor</h2>
+            <p class="media50__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEDIA -->
+      <section class="media50 media-bottom media50--black media50--reversed">
+        <div class="media50__container container">
+          <img
+            src="/assets/images/pdp/media2.png"
+            alt="media image"
+            class="media50__img"
+          />
+          <div class="media50__rich-text">
+            <h2 class="media50__title">Lorem ipsum dolor sit amet</h2>
+            <p class="media50__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- YOU MIGHT ALSO LIKE -->
+      <section class="products extra">
+        <div class="products__container container">
+          <h3 class="products__title">You might also like</h3>
+          <ul class="products__list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__social-medias">
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/facebook.svg" alt="facebook"
+          /></a>
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#" class="footer__social-media"
+            ><img src="/assets/images/icons/youtube.svg" alt="youtube"
+          /></a>
+        </div>
+        <form action="#" class="footer__form">
+          <input
+            type="email"
+            class="footer__input"
+            placeholder="Write your email ..."
+          />
+          <button class="footer__submit-btn btn btn--white">
+            Join the family
+          </button>
+        </form>
+        <p class="footer__text">
+          The only way to discover exclusive deals, new product launches and
+          more
+        </p>
+
+        <button class="footer__floating-btn">
+          <img src="/assets/images/icons/gift.svg" alt="gift" />
+        </button>
+      </div>
+    </footer>
+  </body>
 </html>

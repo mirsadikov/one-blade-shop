@@ -103,15 +103,12 @@
 
   .products__list {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px 7px;
   }
 
   .products-header__categories {
     width: 100%;
     justify-content: space-around;
-  }
-
-  .products__list {
-    grid-gap: 24px 7px;
   }
 
   .product__swatch {
