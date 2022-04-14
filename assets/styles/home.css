@@ -2,5 +2,6 @@
 @import url(/assets/styles/general.css);
 @import url(/assets/styles/components/header.css);
 @import url(/assets/styles/components/product.css);
+@import url(/assets/styles/components/media50x50.css);
 @import url(/assets/styles/components/footer.css);
 @import url(./pages/home.css);
