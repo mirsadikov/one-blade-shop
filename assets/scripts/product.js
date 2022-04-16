@@ -1,4 +1,7 @@
+import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+
 const razorsList = document.querySelector('.extra .products__list');
+const scrollbar = document.querySelector('.swiper-scrollbar');
 
 const products = [
   {
@@ -22,6 +25,42 @@ const products = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.hero__slider', {
+    // autoplay: true,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.hero__slider-next',
+      prevEl: '.hero__slider-prev',
+    },
+    breakpoints: {
+      0: {
+        scrollbar: {
+          el: scrollbar,
+        },
+        slidesPerView: 1,
+        rewind: true,
+      },
+      601: {
+        slidesPerView: 2,
+        scrollbar: {
+          el: scrollbar,
+        },
+        rewind: true,
+      },
+      901: {
+        navigation: false,
+        scrollbar: false,
+        slidesPerView: 1,
+        spaceBetween: 1,
+        direction: 'vertical',
+        autoHeight: true,
+        loopAdditionalSlides: 1,
+        loop: true,
+        rewind: false,
+      },
+    },
+  });
+
   products.forEach((product) => {
     const html = `
         <li>

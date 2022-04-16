@@ -20,23 +20,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- ANNOUNCEMENT -->
-      <div class="header__announcement">
-        <p>
-          Check out our <a class="header__announcement-link">Holiday</a> Sale!
-          Click here to shop now
-        </p>
-        <img
-          src="/assets/images/icons/left-arrow.svg"
-          alt="left arrow"
-          class="header__announcement-arrow"
-        />
-        <img
-          class="header__announcement-cross"
-          src="/assets/images/icons/cross.svg"
-          alt="cross"
-        />
-      </div>
       <!-- NAV -->
       <nav class="nav">
         <div class="nav__container">
@@ -92,6 +75,239 @@
 
     <!-- MAIN -->
     <main class="main">
+      <!-- HERO -->
+
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__slider-wrapper">
+            <div class="hero__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero__slide">
+                  <img
+                    src="/assets/images/pdp/product0.png"
+                    alt="product"
+                    class="hero__img"
+                  />
+                </div>
+                <div class="swiper-slide hero__slide">
+                  <img
+                    src="/assets/images/pdp/product1.png"
+                    alt="product"
+                    class="hero__img"
+                  />
+                </div>
+                <div class="swiper-slide hero__slide">
+                  <img
+                    src="/assets/images/pdp/product2.png"
+                    alt="product"
+                    class="hero__img"
+                  />
+                </div>
+              </div>
+              <div class="hero__slider-prev hero__slider-btn"><img src="/assets/images/icons/prev.svg" alt=""></div>
+              <div class="hero__slider-next hero__slider-btn"><img src="/assets/images/icons/next.svg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="hero__meta meta">
+            <div class="meta__container">
+              <div class="swiper">
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="meta__header">
+                <h1 class="meta__title">Genesis Razor</h1>
+                <p class="meta__price">
+                  <span>$24.99</span
+                  ><span class="meta__price--old">$39.95</span>
+                </p>
+                <div class="meta__review">
+                  <div class="meta__stars">
+                    <img
+                      src="/assets/images/icons/star.svg"
+                      alt="star"
+                      class="meta__star"
+                    />
+                    <img
+                      src="/assets/images/icons/star.svg"
+                      alt="star"
+                      class="meta__star"
+                    />
+                    <img
+                      src="/assets/images/icons/star.svg"
+                      alt="star"
+                      class="meta__star"
+                    />
+                    <img
+                      src="/assets/images/icons/star.svg"
+                      alt="star"
+                      class="meta__star"
+                    />
+                    <img
+                      src="/assets/images/icons/star.svg"
+                      alt="star"
+                      class="meta__star"
+                    />
+                  </div>
+                  <span class="meta__review-text">13 reviews</span>
+                </div>
+              </div>
+              <div class="meta__affirm">
+                <span>Financing as low as $23/month with</span>
+                <img src="/assets/images/pdp/affirm.png" alt="affirm logo" />
+              </div>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex .
+              </p>
+
+              <div class="meta__colors">
+                <div class="meta__color-text">
+                  <span>Color: </span><span class="meta__color-name">Gold</span>
+                </div>
+                <div class="meta__colors-list">
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color1"
+                    class="meta__color"
+                    autocomplete="off"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color2"
+                    class="meta__color"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color3"
+                    class="meta__color"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="meta__plans">
+                <div class="meta__plan-text">
+                  <span>Select a plan:</span>
+                </div>
+                <div>
+                  <div class="meta__plan">
+                    <input
+                      type="radio"
+                      name="plan"
+                      id="plan1"
+                      class="meta__plan-radio"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label for="plan1">Without a Refill Plan</label>
+                  </div>
+                  <div class="meta__plan">
+                    <input
+                      type="radio"
+                      name="plan"
+                      id="plan2"
+                      class="meta__plan-radio"
+                      autocomplete="off"
+                    />
+                    <label for="plan2">Plan</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="meta__addons">
+                <input
+                  type="radio"
+                  name="addon"
+                  id="addon1"
+                  class="meta__addon-radio"
+                  autocomplete="off"
+                  checked
+                />
+                <label for="addon1" class="meta__addon">
+                  <img
+                    src="/assets/images/pdp/addon1.png"
+                    alt="addon 1"
+                    class="meta__addon-img"
+                  />
+                  <h4 class="meta__addon-title">
+                    OneBlade Black tile after shave balm
+                  </h4>
+                  <p class="meta__addon-price">$3.50</p>
+                </label>
+                <input
+                  type="radio"
+                  name="addon"
+                  id="addon2"
+                  class="meta__addon-radio"
+                  autocomplete="off"
+                />
+                <label for="addon2" class="meta__addon">
+                  <img
+                    src="/assets/images/pdp/addon2.png"
+                    alt="addon 2"
+                    class="meta__addon-img"
+                  />
+                  <h4 class="meta__addon-title">
+                    OneBlade Black tile after shave balm
+                  </h4>
+                  <p class="meta__addon-price">$3.50</p>
+                </label>
+                <input
+                  type="radio"
+                  name="addon"
+                  id="addon3"
+                  class="meta__addon-radio"
+                  autocomplete="off"
+                />
+                <label for="addon3" class="meta__addon">
+                  <img
+                    src="/assets/images/pdp/addon3.png"
+                    alt="addon 3"
+                    class="meta__addon-img"
+                  />
+                  <h4 class="meta__addon-title">
+                    OneBlade Black tile after shave balm
+                  </h4>
+                  <p class="meta__addon-price">$3.50</p>
+                </label>
+              </div>
+
+              <div class="meta__delivery">
+                <p>Deliver every:</p>
+                <p class="meta__delivery-option">
+                  <b class="meta__delivery-time">6 months</b> (I shave onece a
+                  week or less)
+                </p>
+              </div>
+
+              <div class="meta__engraving">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="meta__engraving-checkbox"
+                />
+                <span>Add Engraving (+$10)</span>
+                <input
+                  type="text"
+                  placeholder="Type your engraving here..."
+                  class="meta__engraving-text-input"
+                />
+                <p>16 characters maximum</p>
+              </div>
+            </div>
+            <button class="meta__btn">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
       <!-- MEDIA -->
       <section class="media50 media-bottom media50--black">
         <div class="media50__container container">
