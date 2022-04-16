@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles/product.css" />
     <script>
-      document.documentElement.style.setProperty(
-        '--app-height',
-        `${window.innerHeight}px`,
-      );
+       const appHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', appHeight);
+      appHeight();
     </script>
     <link
       rel="stylesheet"
@@ -65,12 +67,134 @@
           <div class="nav__right">
             <a href="#">
               <img src="/assets/images/icons/account.svg" alt="account" /> </a
-            ><a href="#"
+            ><label for="cart" class="nav__cart-label">
               ><img src="/assets/images/icons/bag.svg" alt="bag"
-            /></a>
+            /></label>
           </div>
         </div>
       </nav>
+
+      <!-- CART -->
+      <input type="checkbox" name="cart" id="cart" class="cart__checkbox"  autocomplete="off" />
+      <div class="cart">
+        <div class="cart__header">
+          <h1 class="cart__title">CART</h1>
+          <label for="cart" class="cart__close-label"
+            ><img src="/assets/images/icons/cross.svg" alt="cross"
+          /></label>
+        </div>
+        <div class="cart__body">
+          <div class="cart__list">
+            <div class="cart__item">
+              <img
+                src="/assets/images/cart-item.png"
+                alt="product"
+                class="cart__img"
+              />
+              <h3 class="cart__item-title">Core Razor</h3>
+              <p class="cart__item-price">$24.99</p>
+              <p class="cart__item-info">Black</p>
+              <div class="cart__item-qty">
+                <button class="cart__item-btn">-</button>
+                <span class="cart__item-count">1</span>
+                <button class="cart__item-btn">+</button>
+              </div>
+            </div>
+            <div class="cart__item">
+              <img
+                src="/assets/images/cart-item.png"
+                alt="product"
+                class="cart__img"
+              />
+              <h3 class="cart__item-title">Restore Serum</h3>
+              <p class="cart__item-price">$24.99</p>
+              <p class="cart__item-info">Black</p>
+              <p class="cart__item-price cart__item-price--old">$39.95</p>
+              <div class="cart__item-qty">
+                <button class="cart__item-btn">-</button>
+                <span class="cart__item-count">1</span>
+                <button class="cart__item-btn">+</button>
+              </div>
+              <a href="#" class="cart__link">Get Refill Plan, Save 20%</a>
+            </div><div class="cart__item">
+              <img
+                src="/assets/images/cart-item.png"
+                alt="product"
+                class="cart__img"
+              />
+              <h3 class="cart__item-title">Restore Serum</h3>
+              <p class="cart__item-price">$24.99</p>
+              <p class="cart__item-info">Black</p>
+              <p class="cart__item-price cart__item-price--old">$39.95</p>
+              <div class="cart__item-qty">
+                <button class="cart__item-btn">-</button>
+                <span class="cart__item-count">1</span>
+                <button class="cart__item-btn">+</button>
+              </div>
+              <a href="#" class="cart__link">Get Refill Plan, Save 20%</a>
+            </div><div class="cart__item">
+              <img
+                src="/assets/images/cart-item.png"
+                alt="product"
+                class="cart__img"
+              />
+              <h3 class="cart__item-title">Restore Serum</h3>
+              <p class="cart__item-price">$24.99</p>
+              <p class="cart__item-info">Black</p>
+              <p class="cart__item-price cart__item-price--old">$39.95</p>
+              <div class="cart__item-qty">
+                <button class="cart__item-btn">-</button>
+                <span class="cart__item-count">1</span>
+                <button class="cart__item-btn">+</button>
+              </div>
+              <a href="#" class="cart__link">Get Refill Plan, Save 20%</a>
+            </div>
+          </div>
+
+          <div class="cart__addons">
+            <h2 class="cart__addons-header">Add ons</h2>
+
+            <div class="cart__addons-list">
+              <div class="cart__addon cart__item">
+                <img
+                  src="/assets/images/cart-item.png"
+                  alt="product"
+                  class="cart__img"
+                />
+                <div class="cart__item-header">
+                  <h3 class="cart__item-title">Product Name</h3>
+                  <p class="cart__item-price">
+                    <span class="cart__item-price--old">$39.95</span>
+                    <span>$24.99</span>
+                  </p>
+                </div>
+                <p class="cart__item-info">
+                  $10 off when you add in the next 5 minutes
+                </p>
+                <button class="cart__item-add-btn">Add</button>
+              </div>
+              <div class="cart__addon cart__item">
+                <img
+                  src="/assets/images/cart-item.png"
+                  alt="product"
+                  class="cart__img"
+                />
+                <div class="cart__item-header">
+                  <h3 class="cart__item-title">Product Name</h3>
+                  <p class="cart__item-price">
+                    <span class="cart__item-price--old">$39.95</span>
+                    <span>$24.99</span>
+                  </p>
+                </div>
+                <p class="cart__item-info">
+                  $10 off when you add in the next 5 minutes
+                </p>
+                <button class="cart__item-add-btn">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->

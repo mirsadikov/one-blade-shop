@@ -58,6 +58,10 @@
   align-items: center;
 }
 
+.nav__cart-label {
+  cursor: pointer;
+}
+
 /* TOGGLE */
 .nav__toggle,
 .nav__menu-label {
