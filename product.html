@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles/product.css" />
     <script>
-       const appHeight = () => {
+      const appHeight = () => {
         const doc = document.documentElement;
         doc.style.setProperty('--app-height', `${window.innerHeight}px`);
       };
@@ -75,7 +75,13 @@
       </nav>
 
       <!-- CART -->
-      <input type="checkbox" name="cart" id="cart" class="cart__checkbox"  autocomplete="off" />
+      <input
+        type="checkbox"
+        name="cart"
+        id="cart"
+        class="cart__checkbox"
+        autocomplete="off"
+      />
       <div class="cart">
         <div class="cart__header">
           <h1 class="cart__title">CART</h1>
@@ -101,38 +107,6 @@
               </div>
             </div>
             <div class="cart__item">
-              <img
-                src="/assets/images/cart-item.png"
-                alt="product"
-                class="cart__img"
-              />
-              <h3 class="cart__item-title">Restore Serum</h3>
-              <p class="cart__item-price">$24.99</p>
-              <p class="cart__item-info">Black</p>
-              <p class="cart__item-price cart__item-price--old">$39.95</p>
-              <div class="cart__item-qty">
-                <button class="cart__item-btn">-</button>
-                <span class="cart__item-count">1</span>
-                <button class="cart__item-btn">+</button>
-              </div>
-              <a href="#" class="cart__link">Get Refill Plan, Save 20%</a>
-            </div><div class="cart__item">
-              <img
-                src="/assets/images/cart-item.png"
-                alt="product"
-                class="cart__img"
-              />
-              <h3 class="cart__item-title">Restore Serum</h3>
-              <p class="cart__item-price">$24.99</p>
-              <p class="cart__item-info">Black</p>
-              <p class="cart__item-price cart__item-price--old">$39.95</p>
-              <div class="cart__item-qty">
-                <button class="cart__item-btn">-</button>
-                <span class="cart__item-count">1</span>
-                <button class="cart__item-btn">+</button>
-              </div>
-              <a href="#" class="cart__link">Get Refill Plan, Save 20%</a>
-            </div><div class="cart__item">
               <img
                 src="/assets/images/cart-item.png"
                 alt="product"
@@ -193,6 +167,18 @@
               </div>
             </div>
           </div>
+
+          <div class="cart__checkout">
+            <h2 class="cart__checkout-header">Subtotal</h2>
+            <p class="cart__checkout-text">You’re $1 away from Free Shipping</p>
+            <progress value="90" max="100" class="cart__progress"></progress>
+            <button class="btn cart__checkout-btn">Checkout</button>
+            <p class="cart__checkout-text">
+              <span>Starting at $23/mo with</span>
+              <img src="/assets/images/pdp/affirm.png" alt="affirm" />.
+              <a href="#" class="cart__checkout-link">Learn More</a>
+            </p>
+          </div>
         </div>
       </div>
     </header>
@@ -228,8 +214,12 @@
                   />
                 </div>
               </div>
-              <div class="hero__slider-prev hero__slider-btn"><img src="/assets/images/icons/prev.svg" alt=""></div>
-              <div class="hero__slider-next hero__slider-btn"><img src="/assets/images/icons/next.svg" alt=""></div>
+              <div class="hero__slider-prev hero__slider-btn">
+                <img src="/assets/images/icons/prev.svg" alt="" />
+              </div>
+              <div class="hero__slider-next hero__slider-btn">
+                <img src="/assets/images/icons/next.svg" alt="" />
+              </div>
             </div>
           </div>
 
@@ -406,7 +396,7 @@
               <div class="meta__delivery">
                 <p>Deliver every:</p>
                 <p class="meta__delivery-option">
-                  <b class="meta__delivery-time">6 months</b> (I shave onece a
+                  <b class="meta__delivery-time">6 months</b> (I shave once a
                   week or less)
                 </p>
               </div>
@@ -415,10 +405,10 @@
                 <input
                   type="checkbox"
                   name=""
-                  id=""
+                  id="engraving"
                   class="meta__engraving-checkbox"
                 />
-                <span>Add Engraving (+$10)</span>
+                <label for="engraving">Add Engraving (+$10)</label>
                 <input
                   type="text"
                   placeholder="Type your engraving here..."

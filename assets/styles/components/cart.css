@@ -19,7 +19,9 @@
 
 .cart__body {
   flex: 1;
-  overflow: scroll;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart__checkbox:checked + .cart {
@@ -134,7 +136,8 @@
   margin-top: 8px;
 }
 
-.cart__addons-header {
+.cart__addons-header,
+.cart__checkout-header {
   font-family: 'Gilroy Bold';
   font-size: 14px;
   line-height: 16px;
@@ -145,7 +148,7 @@
 }
 
 .cart__addon.cart__item {
-  margin-bottom: 0 ;
+  margin-bottom: 0;
 }
 
 .cart__item-header {
@@ -182,6 +185,50 @@
   font-size: 14px;
   line-height: 16px;
   color: #da0000;
+}
+
+.cart__checkout {
+  padding: 36px 16px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.cart__progress {
+  border: none;
+  border-radius: 94px;
+  height: 4px;
+  margin: 8px 0;
+  width: 100%;
+  background-color: #404042;
+}
+
+.cart__progress::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 94px;
+}
+.cart__progress::-moz-progress-bar {
+  background: #bebebe;
+  border-radius: 94px;
+}
+.cart__progress::-webkit-progress-value {
+  background: #bebebe;
+  border-radius: 94px;
+}
+
+.cart__checkout-btn {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.cart__checkout-header {
+  margin-bottom: 8px;
+}
+
+.cart__checkout-link {
+  color: #404042;
+  font-family: 'Gilroy Bold';
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 900px) {
