@@ -63,7 +63,7 @@
 /* MEDIA */
 .media {
   padding: 3rem 0;
-  height: 100vh;
+  /* height: 100vh; */
   max-height: 86rem;
 }
 

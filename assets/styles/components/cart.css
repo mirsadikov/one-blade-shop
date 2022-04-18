@@ -15,6 +15,7 @@
   background-color: var(--c-white);
   transition: transform 0.2s ease-in-out;
   transform: translateX(100%);
+  border-left: 1px solid #bebebe;
 }
 
 .cart__body {
